@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liege Graphic Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<meta name="description" content="Liege Graphic Solutions offers professional graphic design, branding, printing, and digital services in Kenya.">
+<meta name="keywords" content="Graphic Design Kenya, Logo Design, Posters, Branding, Business Cards, Printing">
+<meta name="author" content="Liege Graphic Solutions">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+}
+header{
+    text-align:center;
+    padding:40px 20px;
+}
+.logo{
+    font-size:40px;
+    font-weight:700;
+    color:gold;
+    text-shadow:0 0 10px gold,0 0 20px #ffcc00;
+}
+nav{
+    background:rgba(0,0,0,0.6);
+    padding:15px;
+    text-align:center;
+}
+nav a{
+    color:gold;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:600;
+}
+nav a:hover{ color:white; }
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+h2{
+    text-align:center;
+    color:gold;
+    margin-bottom:25px;
+}
+.center{text-align:center;}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card{
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+    transition:0.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px gold;
+}
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+.btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 30px;
+    background:gold;
+    color:black;
+    font-weight:600;
+    border-radius:25px;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+}
+.btn:hover{ background:#ffcc00; }
+input, textarea, select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border-radius:6px;
+    border:none;
+}
+footer{
+    background:rgba(0,0,0,0.8);
+    text-align:center;
+    padding:20px;
+}
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 18px;
+    border-radius:50%;
+    font-size:22px;
+    text-decoration:none;
+    box-shadow:0 0 15px #25D366;
+}
+.price{
+    font-size:26px;
+    color:gold;
+    font-weight:700;
+}
+</style>
+
+<script>
+function sendWhatsApp(){
+    var name = document.getElementById("name").value;
+    var service = document.getElementById("service").value;
+    var details = document.getElementById("details").value;
+
+    var message =
+    "Hello Liege Graphic Solutions 👋%0A%0A" +
+    "Client Name: " + name + "%0A" +
+    "Service Selected: " + service + "%0A%0A" +
+    "Order Details:%0A" + details + "%0A%0A" +
+    "Please assist. Thank you.";
+
+    var url = "https://wa.me/254797875542?text=" + message;
+    window.open(url, "_blank");
+}
+</script>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Liege Graphic Solutions</div>
+    <p>Professional Graphic Design, Branding & Digital Services</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#profile">Business Profile</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#order">Order</a>
+</nav>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p class="center">
+        We help businesses and individuals grow through creative design,
+        branding, printing and digital marketing solutions.
+    </p>
+</section>
+
+<section id="profile">
+    <h2>Business Profile</h2>
+    <p class="center">
+        <strong>Liege Graphic Solutions</strong> is a professional creative brand
+        delivering modern graphic design, branding, printing and digital services
+        tailored to client needs.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card">Logo Design & Brand Identity</div>
+        <div class="card">Posters, Flyers & Banners</div>
+        <div class="card">Social Media Graphics & Ads</div>
+        <div class="card">Business Cards & Company Profiles</div>
+        <div class="card">Brochures, Magazines & Layouts</div>
+        <div class="card">Packaging & Product Design</div>
+        <div class="card">Website Design</div>
+        <div class="card">Video Editing</div>
+        <div class="card">Jersey Printing & Branding</div>
+        <div class="card">E-Citizen & KRA Services</div>
+    </div>
+</section>
+
+<section id="pricing">
+    <h2>Pricing Packages</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Basic Package</h3>
+            <p class="price">From KES 500</p>
+            <p>Poster / Flyer</p>
+            <p>Business Card</p>
+            <p>Simple CV Design</p>
+        </div>
+
+        <div class="card">
+            <h3>Standard Package</h3>
+            <p class="price">From KES 1,000</p>
+            <p>Logo Design</p>
+            <p>Brand Posters</p>
+            <p>Social Media Graphics</p>
+        </div>
+
+        <div class="card">
+            <h3>Premium Package</h3>
+            <p class="price">From KES 5,000</p>
+            <p>Full Brand Identity</p>
+            <p>Company Profile</p>
+            <p>Marketing Designs</p>
+        </div>
+    </div>
+</section>
+
+<!-- NEW EASY PORTFOLIO -->
+<section id="portfolio">
+    <h2>Our Portfolio</h2>
+    <p class="center">
+        Sample works by <strong>Liege Graphic Solutions</strong> (LG watermarked)
+    </p>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="images/poster 2.png" alt="Poster Design">
+            <img src="images/poster 3.png" alt="Poster Design">
+            <img src="images/poster 4.png" alt="Poster Design">
+            <img src="images/poster 5.png" alt="Poster Design">
+            <img src="images/poster 0.png" alt="Poster Design">
+            <p>Poster Design</p>
+        </div>
+
+        <div class="card">
+            <img src="images/logo.png" alt="Logo Design">
+            <img src="images/logo 2.png 1.png" alt="Logo Design">
+            <img src="images/Logo 3.png" alt="Logo Design">
+            <img src="images/Logo 4.png" alt="Logo Design">
+            <img src="images/Logo 5.png" alt="Logo Design">
+            <p>Logo Design</p>
+        </div>
+
+        <div class="card">
+            <img src="images/CV Resume 1.png" alt="CV Design">
+            <img src="images/CV Resume 2.png" alt="CV Design">
+            <img src="images/CV Resume 3.png" alt="CV Design">
+            <p>Professional CV Design</p>
+        </div>
+
+        <div class="card">
+            <img src="images/id card.png" alt="Business Card">
+    <p>Business Card Design</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="order">
+    <h2>Place an Order</h2>
+    <input id="name" type="text" placeholder="Your Name" required>
+    <select id="service" required>
+        <option value="">-- Select Service --</option>
+        <option>Logo Design & Brand Identity</option>
+        <option>Posters, Flyers & Banners</option>
+        <option>Social Media Graphics & Ads</option>
+        <option>Business Cards & Company Profiles</option>
+        <option>Packaging & Product Design</option>
+        <option>Website Design</option>
+        <option>Video Editing</option>
+        <option>Jersey Printing</option>
+        <option>E-Citizen & KRA Services</option>
+    </select>
+    <textarea id="details" placeholder="Describe your order"></textarea>
+    <button class="btn" onclick="sendWhatsApp()">Send Order via WhatsApp</button>
+</section>
+
+<footer>
+    © 2025 Liege Graphic Solutions | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/254797875542" target="_blank">💬</a>
+
+</body>
+</html>
